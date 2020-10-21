@@ -1,0 +1,137 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$red: #ce0e2d;
+$dkred: #ad0d27;
+$green: #1a5632;
+$dkgrey: #404040;
+$greyhover: #555;
+$ltgrey: rgba(255, 255, 255, 0.5);
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Lobster", cursive;
+}
+
+p {
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#wrapper-navbar {
+	background: $dkgrey;
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		margin-left: 20px;
+		a {
+			img {
+				width: 200px;
+			}
+		}
+	}
+
+	.contact {
+		display: flex;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		z-index: 99;
+		.phone-link {
+			font-size: 18px;
+			color: $ltgrey;
+			padding: 5px;
+			text-decoration: none;
+			margin-left: 15px;
+			&:hover {
+				color: $red;
+			}
+			.fa-phone-alt {
+				padding-right: 5px;
+			}
+		}
+		// .social-icons {
+		// display: flex;
+		// justify-content: space-evenly;
+		.social-link {
+			font-size: 20px;
+			color: white;
+			padding: 8px;
+			display: flex;
+			justify-content: center;
+			text-decoration: none;
+			&:hover {
+				color: $red;
+			}
+		}
+		// }
+	}
+
+	#main-nav {
+		padding: 0;
+		.wp-primary-nav {
+			height: 200px;
+			display: flex;
+			align-items: center;
+			.navbar-nav {
+				//
+				.menu-item {
+					//
+					.nav-link {
+						color: white;
+						margin-right: 20px;
+						&:hover {
+							color: $red;
+							background-color: $greyhover;
+						}
+					}
+					&.current_page_item {
+						.nav-link {
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.splash {
+	height: 75vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/splash.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.splash-h1 {
+	font-size: 52px;
+}
+
+.splash-p {
+	font-size: 20px;
+}
+
+.splash-h1,
+.splash-p {
+	width: 60%;
+	text-align: center;
+}
